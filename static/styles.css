@@ -1,0 +1,121 @@
+body
+{
+font-family : Roboto;
+background-color: white;
+}
+
+h1
+{
+font-family: Algerian;
+text-align: center;
+background-color: lightblue;
+border: 2px solid blue;
+border-radius:10px;
+margin: 0 28% ;
+}
+
+#chatbox
+{
+background-image:url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80');
+margin-left:auto;
+margin-right:auto;
+width:44%;
+margin-top:10px;
+overflow:auto;
+flex:0;
+}
+
+.botText
+{
+margin-left:auto;
+margin-right:auto;
+color:red;
+font-size: 18px;
+font-weight:bold;
+text-align:left;
+line-height:35px;
+border-radius:10px;
+}
+
+.botText span
+{
+margin-left: auto;
+margin-right: auto;
+padding: 5px;
+border-radius: 10px;
+max-width: 80%;
+background: white;
+padding: 4px;
+border-radius: 10px;
+margin: 5px 0px;
+cursor: pointer;
+display:flex;
+}
+
+.userText
+{
+margin-left: auto;
+margin-right: auto;
+color: black;
+font-size: 20px;
+text-align: right;
+line-height: 30px;
+border-radius: 10px;
+font-weight: bold;
+}
+
+.userText span
+ {
+margin-left:auto;
+margin-right:auto;
+padding: 15px;
+max-width: 50%;
+background: lightgreen;
+padding: 5px;
+border-radius: 10px;
+margin: 20px 0px;
+cursor: pointer;
+border-radius: 12px;
+}
+
+
+#userInput
+{
+text-align:center;
+background-color:grey;
+margin-left: auto;
+margin-right: auto;
+width: 44%;
+border: 4px solid grey;
+}
+
+#textInput
+{
+width: 79%;
+border: none;
+border-bottom: 2px solid green;
+font-family: Montserrat;
+font-size: 1.1rem;
+border-radius:10px;
+}
+
+#buttonInput
+{
+background-color:blue;
+width:20%;
+font-family:calibri;
+font-size: 1.1rem;
+border-radius:20px;
+}
+
+@media (max-width:650px)
+{
+#chatbox,#userInput
+{
+width:100%;
+height:100%;
+margin-left:0px;
+margin-right:0px;
+}
+}
+

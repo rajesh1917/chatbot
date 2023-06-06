@@ -1,0 +1,64 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey!!", "Hello", "anybody there", "  "],
+     "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"]
+
+    },
+    {"tag": "question",
+     "patterns": ["How are you?", "How do you do?", "What's up?", "Okay?", "Fine?"],
+     "responses": ["Thanks for asking !! I'M good", "I'm fine", "I'm doing good","I'm doing well"]
+
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
+
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "That's helpful", "Awesome, thanks", "Thanks for helping ","That's great", "Appreciative", "glad", "grateful", "obliged", "thankful"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure","Good to hear from you"]
+
+    },
+    {"tag": "noanswer",
+     "patterns": [""],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered?","job?"],
+     "responses": ["1. I provide information about anything that is available on wikipedia \uD83D\uDE42\n\n2. I Can help you in Accessing youtube directly from here \uD83D\uDE09\n\n3. I provide informaion about navigation through Google maps \uD83D\uDE43\n\n4.I can tell you Jokes to make you happy \uD83D\uDE07"]
+
+    },
+
+    {
+      "tag": "name",
+      "patterns": ["What is your name?","Your sweet name?","Your good name please?"],
+      "responses": ["My name is User friendly bot"]
+
+    },
+    {
+      "tag": "whoareyou",
+      "patterns": ["Who are you?","who you are?"],
+      "responses": ["My name is User friendly bot"]
+
+    },
+    {
+      "tag": "age",
+      "patterns": ["what is your age?","your age?","How old are you?"],
+      "responses": [" I'm few days old "]
+
+    },
+    {
+      "tag": "number",
+      "patterns": ["Pick a random number between 1-10","Choose a number from 1-10"],
+      "responses": ["1","2","3","4","5","6","7","8","9","10"]
+
+    },
+
+    {
+      "tag":"states in India",
+      "patterns":["How many states are there in India?","Number of states in India?"],
+      "responses":["29 states"]
+    }
+]
+}

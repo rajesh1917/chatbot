@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title> ChatBot </title>
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+
+<h1> hello chatbot </h1>
+
+<div id="chatbox" >
+    <p class="botText" style="color:red"><span>Hi!.. I am User Friendly Bot </span></p>
+    <p class="botText" style="color:red"><span>1. I provide information about anything that is available on wikipedia 🙂</span></p>
+    <p class="botText" style="color:red"><span>2. I Can help you in Accessing YouTube directly from here 😉 </span></p>
+    <p class="botText" style="color:red"><span>3. I provide informaion about navigation through Google Maps 🙃 </span></p>
+    <p class="botText" style="color:red"><span>4. I can tell you Jokes to make you happy 😇  </span></p>
+
+
+</div>
+    <div id="userInput">
+<input id="textInput" type="text" name="msg" placeholder="Message">
+<input id="buttonInput" type="submit" value="Send">
+</div>
+
+<script>
+function getBotResponse() {
+var rawText = $("#textInput").val();
+var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+$("#textInput").val("");
+$("#chatbox").append(userHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+
+$.get("/get", { msg: rawText }).done(function(data) {
+var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+$("#chatbox").append(botHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+}
+
+$("#textInput").keypress(function(e) {
+if(e.which == 13) {
+getBotResponse();
+}
+});
+
+$("#buttonInput").click(function() {
+getBotResponse();
+
+})
+</script>
+</body>
+</html>
